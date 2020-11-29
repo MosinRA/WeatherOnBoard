@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "968734725721",
+    "firebase_url": "https://myweatherappgeek.firebaseio.com",
+    "project_id": "myweatherappgeek",
+    "storage_bucket": "myweatherappgeek.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:968734725721:android:55c3ccede04aecf8dc0348",
+        "android_client_info": {
+          "package_name": "com.mosin.weatheronboard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "968734725721-90q2gb9p3hen2l1cj8uio13j0npl0vlr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDapDCPFRwL0DTr_E-kd9L941yzhPYFm_g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "968734725721-90q2gb9p3hen2l1cj8uio13j0npl0vlr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

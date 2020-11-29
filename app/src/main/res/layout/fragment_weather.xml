@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ImageView
+        android:id="@+id/weatherIcoView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/showTempViewFragmentShowCityInfo"
+        app:layout_constraintTop_toTopOf="@+id/showTempViewFragmentShowCityInfo" />
+
+    <TextView
+        android:id="@+id/cityNameView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:text=""
+        android:textSize="40sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="city_name" />
+
+    <TextView
+        android:id="@+id/someText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text=""
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tempLike"
+        tools:text="some_text" />
+
+    <TextView
+        android:id="@+id/date_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="52dp"
+        android:text=""
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/cityNameView"
+        app:layout_constraintTop_toTopOf="@+id/cityNameView"
+        tools:text="date_text"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/showTempViewFragmentShowCityInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="90sp"
+        app:layout_constraintStart_toStartOf="@+id/cityNameView"
+        app:layout_constraintTop_toBottomOf="@+id/cityNameView"
+        tools:text="TM" />
+
+    <TextView
+        android:id="@+id/windSpeedView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text=""
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/wind_ico"
+        app:layout_constraintStart_toStartOf="@+id/wind_ico"
+        app:layout_constraintTop_toBottomOf="@+id/wind_ico"
+        tools:text="wind"
+        />
+
+    <TextView
+        android:id="@+id/pressureView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text=""
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/pressure_ico"
+        app:layout_constraintStart_toStartOf="@+id/pressure_ico"
+        app:layout_constraintTop_toBottomOf="@+id/pressure_ico"
+        tools:text="pressure"
+        />
+    <TextView
+        android:id="@+id/humidityView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text=""
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/humidity_ico"
+        app:layout_constraintStart_toStartOf="@+id/humidity_ico"
+        app:layout_constraintTop_toBottomOf="@+id/humidity_ico"
+        tools:text="humidity"
+        />
+    <TextView
+        android:id="@+id/tempLike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="105dp"
+        android:text=""
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/showTempViewFragmentShowCityInfo"
+        app:layout_constraintTop_toBottomOf="@+id/cityNameView"
+        tools:text="temp_like" />
+    <ImageView
+        android:id="@+id/wind_ico"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/windico"
+
+        app:layout_constraintEnd_toStartOf="@+id/humidity_ico"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/humidity_ico" />
+    <ImageView
+        android:id="@+id/humidity_ico"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/humidityico"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/someText" />
+
+    <ImageView
+        android:id="@+id/pressure_ico"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/pressureico"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/humidity_ico"
+        app:layout_constraintTop_toTopOf="@+id/humidity_ico" />
+
+    <ImageView
+        android:id="@+id/navigation_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/gps_location_navigation"
+        app:layout_constraintStart_toEndOf="@+id/cityNameView"
+        app:layout_constraintTop_toTopOf="@+id/cityNameView"
+        android:visibility="gone"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">WeatherOnBoard</string>
+        <string name="search">Поиск города</string>
+        <string name="history_search">История запросов</string>
+        <string name="setting">Настройки</string>
+        <string name="shear_about_us">Рассказать о нас</string>
+        <string name="nav_header_desc">Навигационная панель</string>
+        <string name="email">Почта</string>
+        <string name="name">Имя</string>
+        <string name="wind_speed">Скорость ветра</string>
+        <string name="humidity">Влажность</string>
+        <string name="pressure">Давление</string>
+        <string name="navigation_drawer_open">Наигационная панель открыта</string>
+        <string name="navigation_drawer_close">Навигационная панель закрыта</string>
+        <string name="exclamation">Важное сообщение!</string>
+        <string name="msg_to_er_internet">Отсутствует соединение с интернетом</string>
+        <string name="msg_to_er_url">Возможно выбранный город введен не корректно </string>
+        <string name="temp_like">Ощущается как: </string>
+        <string name="action_settings">Настройки</string>
+        <string name="ok_button" translatable="false">Окей</string>
+</resources>
