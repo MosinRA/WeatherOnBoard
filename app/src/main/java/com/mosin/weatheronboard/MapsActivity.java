@@ -58,7 +58,6 @@ public class MapsActivity extends Fragment implements OnMapReadyCallback {
         requestPemissions();
     }
 
-
     // Запрашиваем Permission’ы
     private void requestPemissions() {
         // Проверим, есть ли Permission’ы, и если их нет, запрашиваем их у
@@ -120,7 +119,7 @@ public class MapsActivity extends Fragment implements OnMapReadyCallback {
         if (provider != null) {
             // Будем получать геоположение через каждые 10 секунд или каждые
             // 10 метров
-            locationManager.requestLocationUpdates(provider, 1000, 10, new LocationListener() {
+            locationManager.requestLocationUpdates(provider, 10, 10, new LocationListener() {
                 @Override
                 public void onLocationChanged(Location location) {
 
@@ -207,7 +206,6 @@ public class MapsActivity extends Fragment implements OnMapReadyCallback {
                             requireActivity().getSupportFragmentManager()
                                     .beginTransaction()
                                     .replace(R.id.fragmentContainer, new FragmentWeather())
-                                    .replace(R.id.fragmentContainerMap, new MapsActivity())
                                     .commit();
                         }
                     });
